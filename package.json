@@ -1,0 +1,28 @@
+{
+  "name": "fama",
+  "version": "1.0.0",
+  "description": "Fama is a lightweight utility for console & file logging",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Hello Fama!\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Seb-stian/fama.git"
+  },
+  "keywords": [
+    "log",
+    "logger",
+    "debug",
+    "node",
+    "console",
+    "file"
+  ],
+  "author": "Seb-stian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Seb-stian/fama/issues"
+  },
+  "homepage": "https://github.com/Seb-stian/fama#readme",
+  "dependencies": {}
+}
