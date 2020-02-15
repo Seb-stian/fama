@@ -3,3 +3,6 @@
 .vs/VSWorkspaceState.json
 .vs/ProjectSettings.json
 .vscode/launch.json
+log.txt
+test/
+test/test.js

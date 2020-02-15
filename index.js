@@ -130,6 +130,11 @@ class Fama {
             return this.error(`Fama couldn't create a file ${projectDir + file}`);
         }
 
+        if (behaviour !== 'stop' && behaviour !== 'ingore' && behaviour !== 'split' && behaviour !== 'rewrite' && behaviour !== 'continue') {
+            this.warn(`'${behaviour}' is not valid behaviour type. Defaulting to stop.`);
+            behaviour = 'stop';
+        }
+
         this.logs.push({
             path: file,
             alias: alias,
@@ -149,7 +154,7 @@ class Fama {
         if (log == null) return this.error(`Couldn't write to a log file with alias ${alias}, log file was not found`);
 
         fs.writeFileSync(log.path, text);
-        log.length += text.length;
+        log.length = text.length;
     }
 
     /**
